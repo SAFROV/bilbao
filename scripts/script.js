@@ -13,7 +13,7 @@ let scrollbutton = document.getElementById("scrollBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
     scrollbutton.style.display = "flex";
   } else {
     scrollbutton.style.display = "none";
