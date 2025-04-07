@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,5 +22,54 @@
         <div><a href="localfood.html">Local food</a></div>
     </div>
 
+    <div class="map">
+            
+
+            <gmpx-api-loader key="AIzaSyA9JAiKratdvmNvy4iyHKmb4esyGm9i3BE" solution-channel="GMP_GE_mapsandplacesautocomplete_v2">
+            </gmpx-api-loader>
+            <gmp-map center="40.749933,-73.98633" zoom="13" map-id="DEMO_MAP_ID">
+              <div slot="control-block-start-inline-start" class="place-picker-container">
+                <gmpx-place-picker placeholder="Enter an address"></gmpx-place-picker>
+              </div>
+              <gmp-advanced-marker></gmp-advanced-marker>
+            </gmp-map>
+            <script src="../scripts/script.js"></script>
+            <script type="module" src="https://ajax.googleapis.com/ajax/libs/@googlemaps/extended-component-library/0.6.11/index.min.js">
+            </script>
+    </div>
+<!-- API AIzaSyA3uPVbzY-F_9ais0k0XlvKCGj8i9sxXZ4 -->
+
+
+
 </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Marker</title>
+    <!-- The callback parameter is required, so we use console.debug as a noop -->
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3uPVbzY-F_9ais0k0XlvKCGj8i9sxXZ4&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      gmp-map {
+        height: 100%;
+      }
+
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <gmp-map center="43.26335525512695,-2.935015916824341" zoom="14" map-id="DEMO_MAP_ID">
+      <gmp-advanced-marker position="43.26335525512695,-2.935015916824341" title="My location"></gmp-advanced-marker>
+    </gmp-map>
+  </body>
 </html>

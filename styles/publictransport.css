@@ -63,5 +63,7 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
-
-
+        
+  .place-picker-container {
+    padding: 20px;
+  }
